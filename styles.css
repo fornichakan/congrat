@@ -11,14 +11,14 @@ body, html {
 /* สำหรับคอมพิวเตอร์ปกติ */
 @media (min-width: 1024px) {
     body {
-        background: url('img/bg-desk.png') no-repeat center center fixed;
+        background: url('img/p-desk.png') no-repeat center center fixed;
     }
 }
 
 /* สำหรับอุปกรณ์มือถือรวมถึง iPhone 11 */
 @media (max-width: 414px) {
     body {
-        background: url('img/bg-mobile.png') no-repeat center center fixed;
+        background: url('img/p-mobile.png') no-repeat center center fixed;
     }
 }
 
