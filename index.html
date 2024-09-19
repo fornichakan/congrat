@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Nichakan</title>
+    <title>For Nichakan Only</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,5 +13,25 @@
             <h1>Congratulations</h1>
         </div>
     </div>
+
+    <script>
+        // ฟังก์ชันเพื่อยิงคอนเฟตติแบบต่อเนื่อง
+        function launchConfetti() {
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            setInterval(function() {
+                var particleCount = 50;
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 1000); // คอนเฟตติจะทำงานทุกๆ 1 วินาที
+        }
+
+        // เรียกใช้ฟังก์ชันเมื่อหน้าโหลดเสร็จ
+        window.onload = launchConfetti;
+    </script>
 </body>
 </html>
