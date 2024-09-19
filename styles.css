@@ -12,16 +12,16 @@ body, html {
 /* สำหรับคอมพิวเตอร์ปกติ */
 @media (min-width: 1024px) {
     body {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('img/p-desk.png');
-        background-size: contain; /* ปรับให้พอดีกับขอบหน้าจอ */
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url('img/p-desk.png');
+        background-size: contain;
     }
 }
 
 /* สำหรับอุปกรณ์มือถือรวมถึง iPhone 11 */
 @media (max-width: 414px) {
     body {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('img/p-mobile.png');
-        background-size: contain; /* ปรับให้พอดีกับขอบหน้าจอ */
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url('img/p-mobile.png');
+        background-size: contain;
     }
 }
 
@@ -40,21 +40,23 @@ body, html {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 2rem; /* เพิ่มขนาดฟอนต์สำหรับข้อความภายในการ์ด */
 }
 
 .card h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 4rem; /* เพิ่มขนาดตัวอักษรของหัวเรื่อง */
 }
 
 /* Media Queries สำหรับ iPhone 11 (414px) */
 @media (max-width: 414px) {
     .card {
         padding: 15px;
+        font-size: 2.5rem; /* ขยายขนาดฟอนต์สำหรับมือถือ */
     }
 
     .card h1 {
-        font-size: 1.5rem;
+        font-size: 3rem; /* ขยายขนาดหัวเรื่องสำหรับมือถือ */
     }
 }
 
@@ -62,9 +64,10 @@ body, html {
 @media (min-width: 1024px) {
     .card {
         padding: 30px;
+        font-size: 3rem; /* ขยายขนาดฟอนต์สำหรับคอมพิวเตอร์ */
     }
 
     .card h1 {
-        font-size: 2.5rem;
+        font-size: 5rem; /* ขยายขนาดหัวเรื่องสำหรับคอมพิวเตอร์ */
     }
 }
