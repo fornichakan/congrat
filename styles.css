@@ -12,7 +12,7 @@ body, html {
 /* สำหรับคอมพิวเตอร์ปกติ */
 @media (min-width: 1024px) {
     body {
-        background-image: url('img/p-desk.png');
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('img/p-desk.png');
         background-size: contain; /* ปรับให้พอดีกับขอบหน้าจอ */
     }
 }
@@ -20,7 +20,7 @@ body, html {
 /* สำหรับอุปกรณ์มือถือรวมถึง iPhone 11 */
 @media (max-width: 414px) {
     body {
-        background-image: url('img/p-mobile.png');
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('img/p-mobile.png');
         background-size: contain; /* ปรับให้พอดีกับขอบหน้าจอ */
     }
 }
