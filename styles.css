@@ -1,0 +1,67 @@
+/* ตั้งค่าพื้นหลัง */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* สำหรับคอมพิวเตอร์ปกติ */
+@media (min-width: 1024px) {
+    body {
+        background: url('img/bg-desk.png') no-repeat center center fixed;
+    }
+}
+
+/* สำหรับอุปกรณ์มือถือรวมถึง iPhone 11 */
+@media (max-width: 414px) {
+    body {
+        background: url('img/bg-mobile.png') no-repeat center center fixed;
+    }
+}
+
+/* กำหนดตำแหน่งของการ์ด */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* สไตล์ของการ์ด */
+.card {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Media Queries สำหรับ iPhone 11 (414px) */
+@media (max-width: 414px) {
+    .card {
+        padding: 15px;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media Queries สำหรับคอมพิวเตอร์ปกติ */
+@media (min-width: 1024px) {
+    .card {
+        padding: 30px;
+    }
+
+    .card h1 {
+        font-size: 2.5rem;
+    }
+}
